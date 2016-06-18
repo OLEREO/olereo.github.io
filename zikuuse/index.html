@@ -1,0 +1,945 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="ZIKU!,教程," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="阅读这篇文章，你可以获得关于 ZIKU! 的使用方法！">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ZIKU!-教程">
+<meta property="og:url" content="http://olereo.com/zikuuse/index.html">
+<meta property="og:site_name" content="OLEREO!">
+<meta property="og:description" content="阅读这篇文章，你可以获得关于 ZIKU! 的使用方法！">
+<meta property="og:image" content="http://olereo.com/\images\zikuuse\主界面.jpg">
+<meta property="og:image" content="http://olereo.com/\images\zikuuse\隐藏按钮.jpg">
+<meta property="og:image" content="http://olereo.com/\images\zikuuse\菜单按钮.jpg">
+<meta property="og:image" content="http://olereo.com/\images\zikuuse\欢迎使用ZIKU.jpg">
+<meta property="og:image" content="http://olereo.com/\images\zikuuse\切换分类表文件.jpg">
+<meta property="og:image" content="http://olereo.com/\images\zikuuse\分类管理.jpg">
+<meta property="og:image" content="http://olereo.com/\images\zikuuse\子分类管理.jpg">
+<meta property="og:image" content="http://olereo.com/\images\zikuuse\右键添加新项目.jpg">
+<meta property="og:image" content="http://olereo.com/\images\zikuuse\拖拽文件到项目列表添加新项目.gif">
+<meta property="og:image" content="http://olereo.com/\images\zikuuse\右键编辑项目.jpg">
+<meta property="og:image" content="http://olereo.com/\images\zikuuse\编辑项目窗体.jpg">
+<meta property="og:image" content="http://olereo.com/\images\zikuuse\没有自定义图标.jpg">
+<meta property="og:image" content="http://olereo.com/\images\zikuuse\自定义图标.jpg">
+<meta property="og:image" content="http://olereo.com/\images\zikuuse\自定义了图标.jpg">
+<meta property="og:image" content="http://olereo.com/\images\zikuuse\取消自定义图标.jpg">
+<meta property="og:image" content="http://olereo.com/\images\zikuuse\项目管理.jpg">
+<meta property="og:image" content="http://olereo.com/\images\zikuuse\项目子信息.jpg">
+<meta property="og:image" content="http://olereo.com/\images\zikuuse\右键小抄.jpg">
+<meta property="og:image" content="http://olereo.com/\images\zikuuse\编辑小抄.jpg">
+<meta property="og:image" content="http://olereo.com/\images\zikuuse\小抄1.jpg">
+<meta property="og:image" content="http://olereo.com/\images\zikuuse\小抄2.jpg">
+<meta property="og:image" content="http://olereo.com/\images\zikuuse\关联项目.jpg">
+<meta property="og:image" content="http://olereo.com/\images\zikuuse\右键关联项目.jpg">
+<meta property="og:image" content="http://olereo.com/\images\zikuuse\添加关联项目.jpg">
+<meta property="og:image" content="http://olereo.com/\images\zikuuse\勾选关联项目.jpg">
+<meta property="og:image" content="http://olereo.com/\images\zikuuse\环境变量.jpg">
+<meta property="og:image" content="http://olereo.com/\images\zikuuse\路径1.jpg">
+<meta property="og:image" content="http://olereo.com/\images\zikuuse\路径2.gif">
+<meta property="og:image" content="http://olereo.com/\images\zikuuse\路径3.gif">
+<meta property="og:image" content="http://olereo.com/\images\zikuuse\路径4.gif">
+<meta property="og:image" content="http://olereo.com/\images\zikuuse\目录管理.jpg">
+<meta property="og:image" content="http://olereo.com/\images\zikuuse\编辑目录管理.jpg">
+<meta property="og:image" content="http://olereo.com/\images\zikuuse\启用搜索快捷键.jpg">
+<meta property="og:image" content="http://olereo.com/\images\zikuuse\搜索窗口.jpg">
+<meta property="og:image" content="http://olereo.com/\images\zikuuse\搜索fir.gif">
+<meta property="og:image" content="http://olereo.com/\images\zikuuse\设置火狐浏览器的搜索缩写.jpg">
+<meta property="og:image" content="http://olereo.com/\images\zikuuse\搜索hh.gif">
+<meta property="og:image" content="http://olereo.com/\images\zikuuse\存在的文件.jpg">
+<meta property="og:image" content="http://olereo.com/\images\zikuuse\不存在的文件.jpg">
+<meta property="og:image" content="http://olereo.com/\images\zikuuse\拖拽排序.gif">
+<meta property="og:image" content="http://olereo.com/\images\zikuuse\没有设置自定义图标.jpg">
+<meta property="og:image" content="http://olereo.com/\images\zikuuse\设置了自定义图标.jpg">
+<meta property="og:updated_time" content="2016-06-18T15:00:54.336Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ZIKU!-教程">
+<meta name="twitter:description" content="阅读这篇文章，你可以获得关于 ZIKU! 的使用方法！">
+<meta name="twitter:image" content="http://olereo.com/\images\zikuuse\主界面.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 11338043,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> ZIKU!-教程 | OLEREO! </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?26cb0e19447daf60e667d3033d912e7a";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">OLEREO!</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">哦咧哩噢！</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                ZIKU!-教程
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-06-18T22:50:00+08:00" content="2016-06-18">
+              2016-06-18
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/ZIKU/" itemprop="url" rel="index">
+                    <span itemprop="name">ZIKU!</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/zikuuse/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="zikuuse/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/zikuuse/" class="leancloud_visitors" data-flag-title="ZIKU!-教程">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>阅读这篇文章，你可以获得关于 ZIKU! 的使用方法！<br><a id="more"></a></p>
+<h2 id="主窗口"><a href="#主窗口" class="headerlink" title="主窗口"></a>主窗口</h2><p><img src="\images\zikuuse\主界面.jpg" alt="主界面.jpg"></p>
+<h3 id="主界面元素"><a href="#主界面元素" class="headerlink" title="主界面元素"></a>主界面元素</h3><h4 id="自动隐藏按钮"><a href="#自动隐藏按钮" class="headerlink" title="自动隐藏按钮"></a>自动隐藏按钮</h4><p>首先是界面上方的<strong>“自动隐藏”</strong>按钮，该按钮点击之后会在下面的三种状态中来回切换：<br><img src="\images\zikuuse\隐藏按钮.jpg" alt="隐藏按钮.jpg"><br>其中按钮默认是<strong>“自动隐藏”</strong>，各个状态的功能如下：<br><strong>自动隐藏</strong>：在界面失去焦点之后，界面隐藏。此时可以通过<strong>快捷键</strong>或者点击<strong>托盘图标</strong>显示界面。<br><strong>不自动隐藏</strong>：在该状态下，界面和普通窗体一样，在失去焦点之后不会隐藏，并且可以被其他窗口所遮盖。<br><strong>窗口置顶</strong>：在该状态下，界面不仅不会自动隐藏，并且还会一直置顶于其他窗口之上。</p>
+<h4 id="“H”-amp-“E”-按钮"><a href="#“H”-amp-“E”-按钮" class="headerlink" title="“H” &amp; “E” 按钮"></a>“H” &amp; “E” 按钮</h4><p>蓝色的”H”按钮是<code>隐藏界面按钮</code>，按下该按钮之后，会隐藏界面。<br>红色的”E”按钮是<code>退出</code>按钮，按下该按钮之后，ZIKU! 会完全退出程序。</p>
+<h4 id="菜单按钮"><a href="#菜单按钮" class="headerlink" title="菜单按钮"></a>菜单按钮</h4><p>右下角的是<code>菜单按钮</code>，通过该按钮，我们可以打开关于ZIKU!其他功能的窗口。<br><img src="\images\zikuuse\菜单按钮.jpg" alt="菜单按钮.jpg"><br>关于该按钮下面的各个功能，我们稍后再讲。</p>
+<h2 id="分类表文件管理"><a href="#分类表文件管理" class="headerlink" title="分类表文件管理"></a>分类表文件管理</h2><p>想要保存软件信息，就需要一个数据库文件，在 ZIKU! 中，这些文件就是 <strong>分类表文件</strong>。<br><strong>分类表文件</strong>中记录的信息有：父子分类信息，项目信息，目录信息。<br>~而关于软件的快捷键等设置信息，不在这些文件中记录。~</p>
+<p>第一次使用 ZIKU! 的时候，提示了需要生成一个数据库文件，此时,我们跟着步骤走生成即可:<br><img src="\images\zikuuse\欢迎使用ZIKU.jpg" alt="欢迎使用ZIKU.jpg"></p>
+<p>如果你有需要的话，可以创建多个分类表文件：<br>打开<em>分类表文件管理</em>：<code>菜单按钮</code> &gt; <code>管理或切换分类表文件</code> &gt; “<code>新建分类表文件</code>或<code>导入分类表文件</code>“</p>
+<p>切换分类表文件：右键需要切换到的分类表文件，<br><img src="\images\zikuuse\切换分类表文件.jpg" alt="切换分类表文件.jpg"></p>
+<h2 id="分类管理"><a href="#分类管理" class="headerlink" title="分类管理"></a>分类管理</h2><p>在我们添加一个软件到 ZIKU! 之前，我们先来创建一些软件的分类：</p>
+<p>打开<strong>分类管理</strong>：<code>菜单按钮</code>&gt;<code>分类管理</code><br><img src="\images\zikuuse\分类管理.jpg" alt="分类管理.jpg"><br>点击首先点击左侧的<code>新建父分类</code>创建一个<strong>父分类</strong>。</p>
+<p>右侧<strong>子分类</strong>功能按钮则会在点击了左侧的<strong>父分类</strong>之后启用。<br><img src="\images\zikuuse\子分类管理.jpg" alt="子分类管理.jpg"></p>
+<p>完成之后关闭窗口，主界面便会刷新启用新的分类列表。</p>
+<p>需要注意的是，删除分类并不会导致该分类下的项目被删除。</p>
+<h2 id="项目管理"><a href="#项目管理" class="headerlink" title="项目管理"></a>项目管理</h2><p>在 ZIKU! 中，每一款软件都是由众多信息组成的，所以在 ZIKU! 中，将这种集合称为<strong>项目</strong>。</p>
+<h3 id="添加项目"><a href="#添加项目" class="headerlink" title="添加项目"></a>添加项目</h3><p>首先是如何添加一个新的项目：</p>
+<ul>
+<li>右键添加<br>第一种有在界面上的<strong>“项目列表&gt;右键”</strong>，点击<strong>“添加新项目”</strong>选项：<br><img src="\images\zikuuse\右键添加新项目.jpg" alt="右键添加新项目.jpg"></li>
+<li>拖拽文件到列表<br>注意，由于界面模式是失去焦点后隐藏界面，所以在<strong>自动隐藏</strong>状态下，我们点住其他位置上的文件时界面会自动隐藏，这时候，我们可以通过使用设定的<strong>显隐快捷键</strong>再次调出界面。<br><img src="\images\zikuuse\拖拽文件到项目列表添加新项目.gif" alt="拖拽文件到项目列表添加新项目.gif"><br>又或者将<strong>自动隐藏</strong>状态切换到<strong>不自动隐藏</strong>或<strong>窗口置顶</strong>状态。</li>
+</ul>
+<h3 id="编辑项目"><a href="#编辑项目" class="headerlink" title="编辑项目"></a>编辑项目</h3><p>对现有的项目编辑，可以通过右键需要编辑的项目，点击<strong>编辑该项目</strong>即可：<br><img src="\images\zikuuse\右键编辑项目.jpg" alt="右键编辑项目.jpg"></p>
+<ul>
+<li><p>项目编辑窗体的内容<br><img src="\images\zikuuse\编辑项目窗体.jpg" alt="编辑项目窗体.jpg"></p>
+<ul>
+<li><strong>项目名称</strong>：项目的名称。</li>
+<li><strong>项目版本</strong>：该项目的版本。部分文件也可以通过右侧的”通过主值获取项目版本”获取文件的版本号。</li>
+<li><strong><code>通过主值获取项目版本</code></strong>：功能如其名。</li>
+<li><strong>项目简介</strong>：通过一段简短的简介(在界面的列表中名称的右侧显示)，让人看到之后可以迅速理解该项目(软件)的作用。</li>
+<li><strong>项目主页</strong>：该项目的网页主页。</li>
+<li><strong>搜索缩写</strong>：该缩写在搜索窗体上<strong>优先匹配</strong>。</li>
+<li><p><strong>项目主值</strong>：是指该项目的主要值，在界面双击时，将执行该主值。<br>主值可以是一个完整的文件路径之外，也可以是<strong>系统命令</strong>或者一个<strong>网址</strong>： </p>
+<blockquote>
+<p>系统命令：cmd<br>网址：www.cnblogs.com/olereo/p/ziku.html<br>–添加网址，前面需要添加前缀<code>WWW.</code>或<code>http://</code>或<code>https://</code>等正确的网址前缀。</p>
+</blockquote>
+</li>
+<li><p><strong>启动参数</strong>：当我们的主值是一个可执行程序，并且该程序有他的启动参数可选时，就可以将需要使用的启动参数填写至此。不需要，留空即可。</p>
+</li>
+<li><strong>启动工作目录(WorkingDir)</strong>：这个是主值文件在启动时候的工作目录，在不设定的情况下，默认是文件所在的目录。不需要设定时，请留空即可。</li>
+<li><strong>项目目录</strong>：为项目设置一个目录以管理该项目的文件，该功能有一个对应的变量。</li>
+<li><strong><code>子目录管理</code></strong>：除了项目目录之外，还可以为项目添加一些子目录例如安装包、插件、资料等目录，关于目录的作用，在后面会讲到。</li>
+<li><strong>关联项目ID</strong>：这里列举除了该项目所关联的其他项目的ID。在这里只做展示，不可以编辑，该功能会在后面讲到。</li>
+<li><strong>项目介绍</strong>：关于这个项目的介绍，可以写下关于该项目(软件)的一些介绍或者项目信息的记录。</li>
+<li><strong>项目归属分类</strong>：从已有的分类中勾选该项目归属的分类，一个项目可以归属多个分类。<ul>
+<li>~点击分类左侧的<code>+</code>可展开显示该分类下的子分类。~</li>
+<li>~注意，勾选(归属)了父分类，项目并不会归属到该分类下的子分类。~</li>
+<li>~如果没有勾选任何的分类，那么项目不会在主界面查看的到，需要在”项目管理”处进行管理。~</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>自定义图标<br>除了获取主值文件的图标，我们还可以选择一个指定的图像文件作为<strong>自定义图标</strong>。</p>
+</li>
+</ul>
+<p>在没有自定义图标是，将鼠标移动到编辑窗口的图标处，将提示下面的信息：<br><img src="\images\zikuuse\没有自定义图标.jpg" alt="没有自定义图标.jpg"></p>
+<p>如果想指定一个图像文件作为新的项目图标，通过点击图标，点击出现的<strong>设置自定义图标</strong>选项，我们便可以选择支持的图像文件作为项目的图标了：<br><img src="\images\zikuuse\自定义图标.jpg" alt="自定义图标.jpg"><br>图标支持的图像格式为：ico、png、jpg<br>最大支持”32x32”像素，超出该像素大小的，将会超出显示范围。</p>
+<p>在自定义了图标之后，再次移动鼠标到项目图标处，提示会变成类似下面的信息：<br><img src="\images\zikuuse\自定义了图标.jpg" alt="自定义了图标.jpg"><br>如果想取消自定义的图标，则再次点击项目的图标，在出现的选项中点击<strong>取消自定义图标</strong>。<br><img src="\images\zikuuse\取消自定义图标.jpg" alt="取消自定义图标.jpg"></p>
+<blockquote>
+<p>附注：当我们是拖拽文件到项目列表新建项目的时候，ZIKU! 会自动获取文件自带有的部分信息，并填充到相应的位置上。最后所有获取到的信息都会填写到项目的”介绍”中。</p>
+</blockquote>
+<h3 id="管理所有项目"><a href="#管理所有项目" class="headerlink" title="管理所有项目"></a>管理所有项目</h3><p><code>菜单按钮</code> &gt; <code>项目管理</code><br><img src="\images\zikuuse\项目管理.jpg" alt="项目管理.jpg"></p>
+<ul>
+<li>在这个窗口，你可以管理所有的项目，包括那些因为没有选择任何分类而在主界面没有显示的项目。</li>
+<li>右键项目，可以进行更多的操作。</li>
+<li>点击顶部的<strong>ID</strong>或<strong>项目名称</strong>则可以按照这两种方法进行排序。</li>
+</ul>
+<h3 id="项目子信息"><a href="#项目子信息" class="headerlink" title="项目子信息"></a>项目子信息</h3><p>除了以上可以在<strong>“项目编辑”</strong>窗口编辑的信息之外，在主界面上还有三个附加的项目信息：<br><img src="\images\zikuuse\项目子信息.jpg" alt="项目子信息.jpg"><br>通过点击下拉选框，可以修改选择的项目子信息。</p>
+<ul>
+<li>小抄<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">一款软件的信息应该包含什么？</span><br><span class="line">是一段从网上摘抄的介绍？</span><br><span class="line">+软件的版本号？</span><br><span class="line">+软件的主页？</span><br><span class="line">+软件的作者？</span><br><span class="line">。。。</span><br><span class="line">我也不清楚每一款软件究竟都需要包含哪些信息，所以我决定将这个问题交给你们。</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>小抄就是我们小时候为了考试作弊，而眯着本来就看不见的小眼睛，硬是将一篇完整的文言文写在了一张1.5CMx2CM的那一张小纸条。</p>
+<p>而 ZIKU! 中的”小抄”则是一个延伸，利用了”小抄”我们可以将还没有达到需要使用到笔记软件的一些软件的小信息记录下来。</p>
+<ul>
+<li>添加 &amp; 编辑小抄<br>通过右键”子信息”列表，我们可以得到<strong>小抄</strong>的三个选项：<br><img src="\images\zikuuse\右键小抄.jpg" alt="右键小抄.jpg"></li>
+</ul>
+<p>一个小抄所包含的信息和一个项目差不多，有下面几项：<br><img src="\images\zikuuse\编辑小抄.jpg" alt="编辑小抄.jpg"></p>
+<ul>
+<li>两个示例<br><em>不同启动参数的谷歌浏览器</em><br><img src="\images\zikuuse\小抄1.jpg" alt="小抄1.jpg"><br><em>记录onenote插件的下载网页</em><br><img src="\images\zikuuse\小抄2.jpg" alt="小抄2.jpg"></li>
+</ul>
+<ul>
+<li>关联项目<br>有了父子分类之后，我就在想，为什么各个项目之间就不能有联系呢？<ul>
+<li>吃个梨子：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">当我在开发软件的时候，我基本只需要使用分类为&quot;开发工具&quot;下的项目(软件)。</span><br><span class="line">其中&quot;A&quot;是一款产品原型软件，在对产品界面进行调整的时候，我们可能需要吸取到屏幕上的某个颜色。但是&quot;A&quot;却没有提供这个功能，于是我不得不借助另一个位于&quot;图像工具&quot;中的&quot;B&quot;。</span><br><span class="line">这个时候，我就需要将分类切换到&quot;图像工具&quot;去了，打开了&quot;B&quot;之后，因为开发需要，我又要将分类切回到&quot;开发工具&quot;。</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<p>只是偶尔切换的话，可能没什么关系，如果需要经常切换的话就会略显蛋疼了。虽然我会经常用到B软件，但是由于B并不属于”开发工具”，所以强行将B添加到”开发工具”分类，对于某些人(比如我)来讲，看着就会有些着急。</p>
+<p>这时就可以通过将B添加到A的<strong>关联项目</strong>中了。<br><img src="\images\zikuuse\关联项目.jpg" alt="关联项目.jpg"></p>
+<p>同样的，通过右键，我们可以得到<strong>关联项目</strong>的三个选项：<br><img src="\images\zikuuse\右键关联项目.jpg" alt="右键关联项目.jpg"></p>
+<ul>
+<li>添加关联项目<br>点击了”添加或选择关联项目”，我们会看到下面这个选择界面：<br><img src="\images\zikuuse\添加关联项目.jpg" alt="添加关联项目.jpg"><br>其中，<code>创建新的项目</code>和我们之前介绍的<code>添加项目</code>一样。</li>
+</ul>
+<p>这里需要另外介绍的是<code>从现有的项目中选择</code>，点击该选项之后，会弹出一个包含有除当前项目外的所有项目的窗口：<br><img src="\images\zikuuse\勾选关联项目.jpg" alt="勾选关联项目.jpg"><br>我们可以通过点击勾选项目，进行添加或取消以前添加的关联项目。</p>
+<h2 id="目录管理，路径变量"><a href="#目录管理，路径变量" class="headerlink" title="目录管理，路径变量"></a>目录管理，路径变量</h2><ul>
+<li>演示路径变量<br>路径变量不是什么新的功能，Windows就自带了一堆环境变量<br><img src="\images\zikuuse\环境变量.jpg" alt="环境变量.jpg"><br>除了支持Windows的环境变量之外， ZIKU! 还可以自定义路径变量，如果你有用的到的话，这会是一个很有用的功能。而如果你用不到的话，这对于你来讲就是一个摆设。<br><img src="\images\zikuuse\路径1.jpg" alt="路径1.jpg"><br>这是一个很特别的功能，因为这个功能的开始并不是为了软件的管理方面所写的。而是我在开发 ZIKU! 的时候总是为了将一些文件丢到对应的文件夹，以及想着该如何才能快速的将一些从网上下载的东西快速的丢到它本应该呆的目录去。</li>
+</ul>
+<p>除此之外和目录管理相关联的一个功能就是路径变量了，如果说目录管理的作用不大的话，那么路径变量则是点睛之笔。</p>
+<p>使用路径变量的一个好处就是，当有多个地方使用了同一个主值时，修改该主值之后，无需逐个去修改这些地方。</p>
+<ul>
+<li><p>第一种有用的用法：<br><img src="\images\zikuuse\路径2.gif" alt="路径2.gif"><br><img src="\images\zikuuse\路径3.gif" alt="路径3.gif"></p>
+</li>
+<li><p>第二种有用的用法：<br><img src="\images\zikuuse\路径4.gif" alt="路径4.gif"></p>
+</li>
+</ul>
+<p><em>*所有支持路径变量的地方，在它们的下方都会自动展开完整的路径。</em></p>
+<h3 id="管理目录"><a href="#管理目录" class="headerlink" title="管理目录"></a>管理目录</h3><p>在上面演示中，你们应该大概可以理解的了<strong>目录</strong>和<strong>路径变量</strong>之间的关系。</p>
+<blockquote>
+<p>在设置了一个目录之后，同时还会有一个相应<strong>路径变量</strong>，当我们需要在其他地方使用这个目录的路径时，就可以直接填写该变量了。<br>这样的好处就是，当该目录路径发生改变的之后，使用该目录路径变量的值会自动同步，而无需修改。</p>
+</blockquote>
+<p>其中，每一个项目都会有两个自带的变量<strong>项目主值变量</strong>和<strong>项目目录变量</strong>，这两个变量跟随项目的值发生改变，无需另外设置。</p>
+<ul>
+<li>全局目录<br>打开<strong>全局目录管理</strong>：<code>菜单按钮</code>&gt;<code>设置</code>&gt;<code>全局目录管理</code><br><img src="\images\zikuuse\目录管理.jpg" alt="目录管理.jpg"><br>添加和删除可以通过右侧的<code>+</code>和<code>-</code>按钮实现。</li>
+</ul>
+<p>如果想要编辑某一个目录的内容，可以通过点击需要编辑的目录，然后点击下半部分中需要修改的部分：<br><img src="\images\zikuuse\编辑目录管理.jpg" alt="编辑目录管理.jpg"></p>
+<ul>
+<li>项目子目录<br>项目子目录和全局目录的不同在于项目子目录跟随项目，当项目彻底移除之后，项目下的子目录也会失效。</li>
+</ul>
+<p>打开<strong>项目子目录管理</strong>：<code>右键项目列表需要管理的项目</code>&gt;<code>编辑该项目</code>&gt;<code>子目录管理</code></p>
+<hr>
+<p>目前除了与<strong>目录</strong>关联的<strong>路径变量</strong>比较实用外，<strong>目录</strong>的功能还不是很”实用”，如果你有关于<strong>目录</strong>功能的建议，欢迎将想法通过邮件或博客留言与我交流。</p>
+<h2 id="搜索窗口"><a href="#搜索窗口" class="headerlink" title="搜索窗口"></a>搜索窗口</h2><p>使用搜索功能需要在设置窗口中开启<strong>搜索快捷键</strong>：<br><img src="\images\zikuuse\启用搜索快捷键.jpg" alt="启用搜索快捷键.jpg"><br>使用设定好的快捷键调用搜索窗口：<br><img src="\images\zikuuse\搜索窗口.jpg" alt="搜索窗口.jpg"></p>
+<p>现在，你还记得我们在编辑项目的时候，有一个<code>搜索缩写</code>框吗？</p>
+<p>首先，在默认的情况下，搜索框是会首先匹配<strong>搜索缩写</strong>的内容，再接着就是<strong>项目的名称</strong>。<br>中文的项目名称支持拼音首字母匹配，即<code>滴答清单</code>可以使用<code>ddqd</code>或<code>DDQD</code>都可以。</p>
+<p>使用<code>搜索缩写</code>的好处在于，我们可以利用该功能为一些软件起一些别称，并且让它的搜索排序置于其它项目之前。</p>
+<p>例如<code>Firefox</code>(火狐浏览器)，在还没有设置搜索缩写之前，如果我想通过名称搜索到该项目的话，我就需要输入“fir”才能将<code>Firefox</code>匹配到第一个。<br><img src="\images\zikuuse\搜索fir.gif" alt="搜索fir.gif"></p>
+<p>下面我为<code>Firefox</code>设置了一个<code>hh</code>(火狐)的搜索缩写：<br><img src="\images\zikuuse\设置火狐浏览器的搜索缩写.jpg" alt="设置火狐浏览器的搜索缩写.jpg"></p>
+<p>在设置了<code>hh</code>为缩写之后，当我输入第一<code>h</code>的时候，就已经将<code>Firefox</code>匹配到第一个了。<br><img src="\images\zikuuse\搜索hh.gif" alt="搜索hh.gif"></p>
+<p>你还可以将一些软件的功能作为搜索缩写，这样就不需要记住软件的名称了，只需要输入你所需要的功能即可了：</p>
+<blockquote>
+<p>FSCapture &gt; jt ~(截图)~<br>haroopad &gt; markdown</p>
+</blockquote>
+<h3 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h3><p>下面我就介绍一下搜索窗口的更多使用方法：</p>
+<ul>
+<li><p>直接回车<br>~在搜索的时候，需要的项目排在第一位的时候，可以直接回车运行。~</p>
+</li>
+<li><p>下上方向键<br>~匹配到多个项目的时候，利用上下方向键来选择所需的项目~</p>
+</li>
+</ul>
+<ul>
+<li><p>回车<br>~选择到需要的项目之后，直接回车即可运行该项目的主值~</p>
+</li>
+<li><p>右方向键<br>~选择到需要的项目之后，按下右方向键，主界面会切换到该项目的信息，并且将该项目临时添加到列表中~</p>
+</li>
+<li><p>空格<br>~选择到需要的项目之后，按下空格键，将会打开该项目的编辑窗口~</p>
+</li>
+</ul>
+<h3 id="搜索关键字"><a href="#搜索关键字" class="headerlink" title="搜索关键字"></a>搜索关键字</h3><p>除了以上的功能之外，在搜索的时候，首先输入以下的关键字，然后再输入一个空格，即可启用不同的搜索模式：</p>
+<ul>
+<li><p>i：ID<br>在该模式下，搜索的将会是项目的ID，而不是名称。</p>
+</li>
+<li><p>j：简介 &gt; 介绍<br>在该模式下，搜索的将会是项目的<code>简介</code>和<code>介绍</code>中的文字。<br>例如我们一时忘记了项目的名称时，可以通过搜索在简介中包含的功能文字来完成搜索。</p>
+</li>
+</ul>
+<blockquote>
+<p>Foxmail &gt; 简介：桌面邮箱客户端 &gt; 搜索：邮箱<br>FileLocator Pro &gt; 简介：搜索文档中包含的文字 &gt; 搜索：搜索、文档、文字<br>WindowsTextCopyer &gt; 简介：复制屏幕上各种地方的文本 &gt; 搜索：复制、屏幕、文本</p>
+</blockquote>
+<ul>
+<li><p>f：分类<br>在该模式下，首先搜索窗口会列举出所有的分类。这个时候，我们可以继续使用首字母或名称匹配所需要的分类。<br>通过上下键，选择到所需的分类子后，按下右方向键，将会<code>列举出该分类下所有的项目</code>。</p>
+</li>
+<li><p>m：打开项目主值所在目录<br>在该模式下，搜索的内容不会改变，但是当我们按下回车之后，打开的将不是项目主值，而是项目主值文件所在的目录(如果存在的话)。</p>
+</li>
+<li><p>x：搜索小抄<br>在该模式下，搜索将会是所有项目中的小抄缩写和名称。</p>
+</li>
+</ul>
+<h2 id="细节"><a href="#细节" class="headerlink" title="细节"></a>细节</h2><ul>
+<li>在主界面的项目主值下面有一个蓝色的”√”或”×”：<br><img src="\images\zikuuse\存在的文件.jpg" alt="存在的文件.jpg"><img src="\images\zikuuse\不存在的文件.jpg" alt="不存在的文件.jpg"><br>“√”表示完整的主值是一个在系统中存在的文件。<br>“×”表示完整的主值不是一个实际的文件，或者这是一条命令、网页等。</li>
+<li>在主界面拖拽项目可以进行排序，分类管理中也同样。<br><img src="\images\zikuuse\拖拽排序.gif" alt="拖拽排序.gif"></li>
+<li>当一个项目设置了自定义图标之后，在编辑项目的时候，图标的下方会有一条红线。<br><img src="\images\zikuuse\没有设置自定义图标.jpg" alt="没有设置自定义图标.jpg"><img src="\images\zikuuse\设置了自定义图标.jpg" alt="设置了自定义图标.jpg"></li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/ZIKU/" rel="tag">#ZIKU!</a>
+          
+            <a href="/tags/教程/" rel="tag">#教程</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/ziku/" rel="next" title="C# 学前作品一：ZIKU! - 简而全的“软件管理”软件">
+                <i class="fa fa-chevron-left"></i> C# 学前作品一：ZIKU! - 简而全的“软件管理”软件
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="zikuuse/"
+           data-title="ZIKU!-教程" data-url="http://olereo.com/zikuuse/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="OLEREO!" />
+          <p class="site-author-name" itemprop="name">OLEREO!</p>
+          <p class="site-description motion-element" itemprop="description">Smile,Olereo!</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">分类</span>
+              
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#主窗口"><span class="nav-number">1.</span> <span class="nav-text">主窗口</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#主界面元素"><span class="nav-number">1.1.</span> <span class="nav-text">主界面元素</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#自动隐藏按钮"><span class="nav-number">1.1.1.</span> <span class="nav-text">自动隐藏按钮</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#“H”-amp-“E”-按钮"><span class="nav-number">1.1.2.</span> <span class="nav-text">“H” & “E” 按钮</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#菜单按钮"><span class="nav-number">1.1.3.</span> <span class="nav-text">菜单按钮</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分类表文件管理"><span class="nav-number">2.</span> <span class="nav-text">分类表文件管理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分类管理"><span class="nav-number">3.</span> <span class="nav-text">分类管理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目管理"><span class="nav-number">4.</span> <span class="nav-text">项目管理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#添加项目"><span class="nav-number">4.1.</span> <span class="nav-text">添加项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编辑项目"><span class="nav-number">4.2.</span> <span class="nav-text">编辑项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#管理所有项目"><span class="nav-number">4.3.</span> <span class="nav-text">管理所有项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#项目子信息"><span class="nav-number">4.4.</span> <span class="nav-text">项目子信息</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#目录管理，路径变量"><span class="nav-number">5.</span> <span class="nav-text">目录管理，路径变量</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#管理目录"><span class="nav-number">5.1.</span> <span class="nav-text">管理目录</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#搜索窗口"><span class="nav-number">6.</span> <span class="nav-text">搜索窗口</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#功能"><span class="nav-number">6.1.</span> <span class="nav-text">功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#搜索关键字"><span class="nav-number">6.2.</span> <span class="nav-text">搜索关键字</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#细节"><span class="nav-number">7.</span> <span class="nav-text">细节</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2015 - 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">OLEREO!</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"olereo"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+      
+      <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+      <script src="/js/src/hook-duoshuo.js"></script>
+    
+  
+
+
+
+
+
+  
+  
+  
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("thT2Savae5Pc7w92pqd40N0z-gzGzoHsz", "T741SvQVSmb5BpIQBRaWhO3u");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+</body>
+</html>

@@ -1,0 +1,778 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="ZIKU!,软件管理," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="学前作品的意思是，这个作品在我学习 C# 之前就已经使用其他非主流语言编写过的程序了。在学习C#的时候将这些程序作为个人练习作品来重新编写以方便日后的维护。
+这是我的第一款C#软件：ZIKU!">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C# 学前作品一：ZIKU! - 简而全的“软件管理”软件">
+<meta property="og:url" content="http://olereo.com/ziku/index.html">
+<meta property="og:site_name" content="OLEREO!">
+<meta property="og:description" content="学前作品的意思是，这个作品在我学习 C# 之前就已经使用其他非主流语言编写过的程序了。在学习C#的时候将这些程序作为个人练习作品来重新编写以方便日后的维护。
+这是我的第一款C#软件：ZIKU!">
+<meta property="og:image" content="http://olereo.com/\images\ziku\父子分类.gif">
+<meta property="og:image" content="http://olereo.com/\images\ziku\父子项目1.jpg">
+<meta property="og:image" content="http://olereo.com/\images\ziku\父子分类父子项目诠释.png">
+<meta property="og:image" content="http://olereo.com/\images\ziku\小抄1.jpg">
+<meta property="og:image" content="http://olereo.com/\images\ziku\小抄2.jpg">
+<meta property="og:image" content="http://olereo.com/\images\ziku\搜索.gif">
+<meta property="og:image" content="http://olereo.com/\images\ziku\搜索2.gif">
+<meta property="og:image" content="http://olereo.com/\images\ziku\环境变量.jpg">
+<meta property="og:image" content="http://olereo.com/\images\ziku\路径1.jpg">
+<meta property="og:image" content="http://olereo.com/\images\ziku\路径2.gif">
+<meta property="og:image" content="http://olereo.com/\images\ziku\路径3.gif">
+<meta property="og:image" content="http://olereo.com/\images\ziku\路径4.gif">
+<meta property="og:updated_time" content="2016-06-18T15:00:43.261Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="C# 学前作品一：ZIKU! - 简而全的“软件管理”软件">
+<meta name="twitter:description" content="学前作品的意思是，这个作品在我学习 C# 之前就已经使用其他非主流语言编写过的程序了。在学习C#的时候将这些程序作为个人练习作品来重新编写以方便日后的维护。
+这是我的第一款C#软件：ZIKU!">
+<meta name="twitter:image" content="http://olereo.com/\images\ziku\父子分类.gif">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 11338043,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> C# 学前作品一：ZIKU! - 简而全的“软件管理”软件 | OLEREO! </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?26cb0e19447daf60e667d3033d912e7a";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">OLEREO!</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">哦咧哩噢！</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                C# 学前作品一：ZIKU! - 简而全的“软件管理”软件
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-06-18T22:47:00+08:00" content="2016-06-18">
+              2016-06-18
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/ZIKU/" itemprop="url" rel="index">
+                    <span itemprop="name">ZIKU!</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/ziku/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="ziku/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/ziku/" class="leancloud_visitors" data-flag-title="C# 学前作品一：ZIKU! - 简而全的“软件管理”软件">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>学前作品的意思是，这个作品在我学习 C# 之前就已经使用其他非主流语言编写过的程序了。在学习C#的时候将这些程序作为个人练习作品来重新编写以方便日后的维护。</p>
+<p>这是我的第一款C#软件：ZIKU!</p>
+<a id="more"></a>
+<p>虽然写管理软件的人很多，但是貌似写一款“软件管理”的软件还真的是很少。我用过比较好的是“音速启动”只可惜现在是一款“广告软件”了，而且在WINDOWS10下也不能很正常使用。这让我产生了编写 ZIKU! 的想法。</p>
+<p>ZIKU!的功能不多，基本功能是”软件管理”，额外附带“软件启动器”功能。</p>
+<p>和网上各种的软件管家不一样，ZIKU! 并不是一款集”网络软件宝库”，并能推送更新的”贴心管家”。ZIKU! 中的收录的软件信息都是需要我们自己添加的，我们可以添加任何比起软件介绍更加有用的信息。</p>
+<p>如果 ZIKU! 只能做到记录一款软件的基本信息的话，那 ZIKU! 就不应该存在，下面列举的 ZIKU! 的其他一些功能。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">注：在 ZIKU! 中，由于一款&quot;软件&quot;不只包含一个&quot;主程序&quot;，也包含了其他的一些关于&quot;软件&quot;的信息。所以 ZIKU! 中没有&quot;软件&quot;一说，我将这些关于&quot;软件&quot;信息的集合成为&quot;项目&quot;。</span><br></pre></td></tr></table></figure>
+<h2 id="父子分类"><a href="#父子分类" class="headerlink" title="父子分类"></a>父子分类</h2><p><img src="\images\ziku\父子分类.gif" alt="父子分类.gif"></p>
+<p>ZIKU! 的分类只有两个层级，右边是”父分类”，左边”子分类”，除此之外没有更多的分级了。分类的层级限制不会限制到项目的分类选择，项目仍旧可以选择多个不同种类的分类。</p>
+<p>就软件的分类来讲，两个层级并不会显得”吝啬”，毕竟从狭义来讲软件就两种分类：”系统软件”和”应用软件”。</p>
+<h2 id="父子项目"><a href="#父子项目" class="headerlink" title="父子项目"></a>父子项目</h2><p>有了父子分类之后，我就在想，为什么各个项目之间就不能有联系呢？</p>
+<h3 id="吃个梨子："><a href="#吃个梨子：" class="headerlink" title="吃个梨子："></a>吃个梨子：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">当我在开发软件的时候，我基本只需要使用分类为&quot;开发工具&quot;下的项目。其中&quot;A&quot;是一款产品原型软件，在对产品界面进行调整的时候，我们可能需要吸取到屏幕上的某个颜色。但是&quot;A&quot;却没有提供这个功能，于是我们不得不借助另一个位于&quot;图像工具&quot;中的&quot;B&quot;。这个时候，我们就需要将分类切换到&quot;图像工具&quot;去了，打开了&quot;B&quot;之后，因为开发需要，我们又需要将分类切回到&quot;开发工具&quot;。</span><br></pre></td></tr></table></figure>
+<p>如果只是偶尔切换的话，可能没什么关系，但是如果需要经常切换的话就会略显蛋疼了。虽然我们会经常用到B软件，但是由于B并不属于”开发工具”，所以如果强行将B添加到”开发工具”分类，对于某些人(比如我)来讲看着就有些着急。<br>这是就可以将B添加到A的子项目中了。<br><img src="\images\ziku\父子项目1.jpg" alt="父子项目1.jpg"></p>
+<p>而下面这幅图就很好地诠释了关于 ZIKU! 中”父子分类”和”父子项目”之间的关系。<br><img src="\images\ziku\父子分类父子项目诠释.png" alt="父子分类父子项目诠释.png"></p>
+<h2 id="小抄"><a href="#小抄" class="headerlink" title="小抄"></a>小抄</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">一款软件的信息应该包含什么？</span><br><span class="line">是一段从网上摘抄的介绍？</span><br><span class="line">+软件的版本号？</span><br><span class="line">+软件的主页？</span><br><span class="line">+软件的作者？</span><br><span class="line">。。。</span><br><span class="line">我也不清楚每一款软件究竟都需要包含哪些信息，所以我决定将这个问题交给你们。</span><br></pre></td></tr></table></figure>
+<p>小抄就是我们小时候为了考试作弊，而眯着本来就看不见的小眼睛，硬是将一篇完整的文言文写在了一张1.5CMx2CM的那一张小纸条。</p>
+<p>而 ZIKU! 中的”小抄”则是一个延伸，利用了”小抄”我们可以将还没有达到需要使用到笔记软件的一些软件的小信息记录下来。</p>
+<p><em>不同启动参数的谷歌浏览器</em><br><img src="\images\ziku\小抄1.jpg" alt="小抄1.jpg"><br><em>记录onenote插件的下载网页</em><br><img src="\images\ziku\小抄2.jpg" alt="小抄2.jpg"></p>
+<h2 id="简洁的搜索功能"><a href="#简洁的搜索功能" class="headerlink" title="简洁的搜索功能"></a>简洁的搜索功能</h2><p>作为一款管理软件，怎能没有搜索功能呢？<br>ZIKU! 搜索支持项目名称的拼音首字母，完整的名称，和自定义的搜索缩写。</p>
+<p>通过自定义的搜索缩写，除了”firefox”外，使用”hh”也一样能匹配到火狐浏览器。<br><img src="\images\ziku\搜索.gif" alt="搜索.gif"></p>
+<p>除了可以搜索项目的标题之外，也可以通过一些关键字来搜索项目”简介/介绍”中的文字<br><img src="\images\ziku\搜索2.gif" alt="搜索2.gif"></p>
+<h2 id="目录管理，路径变量"><a href="#目录管理，路径变量" class="headerlink" title="目录管理，路径变量"></a>目录管理，路径变量</h2><p>路径变量不是什么新的功能，Windows就自带了一堆环境变量<br><img src="\images\ziku\环境变量.jpg" alt="环境变量.jpg"><br>除了支持Windows的环境变量之外， ZIKU! 还可以自定义路径变量，如果你有用的到的话，这会是一个很有用的功能。而如果你用不到的话，这对于你来讲就是一个摆设。<br><img src="\images\ziku\路径1.jpg" alt="路径1.jpg"><br>这是一个很特别的功能，因为这个功能的开始并不是为了软件的管理方面所写的。而是我在开发 ZIKU! 的时候总是为了将一些文件丢到对应的文件夹，以及想着该如何才能快速的将一些从网上下载的东西快速的丢到它本应该呆的目录去。</p>
+<p>除此之外和目录管理相关联的一个功能就是路径变量了，如果说目录管理的作用不大的话，那么路径变量则是点睛之笔。</p>
+<p>使用路径变量的一个好处就是，当有多个地方使用了同一个主值时，修改该主值之后，无需逐个去修改这些地方。</p>
+<h3 id="第一种有用的用法："><a href="#第一种有用的用法：" class="headerlink" title="第一种有用的用法："></a>第一种有用的用法：</h3><p><img src="\images\ziku\路径2.gif" alt="路径2.gif"><br><img src="\images\ziku\路径3.gif" alt="路径3.gif"></p>
+<h3 id="第二种有用的用法："><a href="#第二种有用的用法：" class="headerlink" title="第二种有用的用法："></a>第二种有用的用法：</h3><p><img src="\images\ziku\路径4.gif" alt="路径4.gif"></p>
+<h2 id="学习C-的第一款软件，经验不足，它“不完美”。"><a href="#学习C-的第一款软件，经验不足，它“不完美”。" class="headerlink" title="学习C#的第一款软件，经验不足，它“不完美”。"></a>学习C#的第一款软件，经验不足，它“不完美”。</h2><p>ZIKU! 使用了.NET4.0的架构，如果下载之后不能运行，请确认已经安装了.NET4.0，未安装的请网上搜索对应系统安装.NET4.0的方法。(下载网盘里附有所需的运行库安装包)</p>
+<p>ZIKU! 并不注重除主界面外的各种节目美观，所以如果其他界面只是长得丑，但是并不影响使用的话，请忽略。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/ZIKU/" rel="tag">#ZIKU!</a>
+          
+            <a href="/tags/软件管理/" rel="tag">#软件管理</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/zikuuse/" rel="prev" title="ZIKU!-教程">
+                ZIKU!-教程 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="ziku/"
+           data-title="C# 学前作品一：ZIKU! - 简而全的“软件管理”软件" data-url="http://olereo.com/ziku/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="OLEREO!" />
+          <p class="site-author-name" itemprop="name">OLEREO!</p>
+          <p class="site-description motion-element" itemprop="description">Smile,Olereo!</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">分类</span>
+              
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#父子分类"><span class="nav-number">1.</span> <span class="nav-text">父子分类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#父子项目"><span class="nav-number">2.</span> <span class="nav-text">父子项目</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#吃个梨子："><span class="nav-number">2.1.</span> <span class="nav-text">吃个梨子：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小抄"><span class="nav-number">3.</span> <span class="nav-text">小抄</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#简洁的搜索功能"><span class="nav-number">4.</span> <span class="nav-text">简洁的搜索功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#目录管理，路径变量"><span class="nav-number">5.</span> <span class="nav-text">目录管理，路径变量</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#第一种有用的用法："><span class="nav-number">5.1.</span> <span class="nav-text">第一种有用的用法：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第二种有用的用法："><span class="nav-number">5.2.</span> <span class="nav-text">第二种有用的用法：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#学习C-的第一款软件，经验不足，它“不完美”。"><span class="nav-number">6.</span> <span class="nav-text">学习C#的第一款软件，经验不足，它“不完美”。</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2015 - 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">OLEREO!</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"olereo"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+      
+      <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+      <script src="/js/src/hook-duoshuo.js"></script>
+    
+  
+
+
+
+
+
+  
+  
+  
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("thT2Savae5Pc7w92pqd40N0z-gzGzoHsz", "T741SvQVSmb5BpIQBRaWhO3u");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+</body>
+</html>
